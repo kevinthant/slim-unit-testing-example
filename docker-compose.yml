@@ -1,0 +1,14 @@
+version: '3'
+services:
+  webapp:
+    image: webdevops/php-apache:7.3
+    container_name: lvdemo-webapp
+    ports:
+      - "8080:80"
+    environment:
+      WEB_DOCUMENT_ROOT: /app/public
+      PHP_DISPLAY_ERRORS: 1
+
+    volumes:
+      - ./:/app
+    

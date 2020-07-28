@@ -12,14 +12,14 @@
     "require": {
         "indeyets/pake": "~1.99",
         "shuber/curl": "dev-master",
-        "slim/slim": "2.4.*",
+        "slim/slim": "2.6.*",
         "slim/views": "0.1.*",
         "there4/slim-test-helpers": "v0.9.6",
-        "twig/twig": "1.15.0"
+        "twig/twig": "1.15.0",
+        "phpunit/phpunit": "^5.7"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "1.*",
-        "phpunit/phpunit": "4.*",
         "indeyets/pake": "~1.99",
         "codeclimate/php-test-reporter": "dev-master"
     },
