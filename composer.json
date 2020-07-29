@@ -2,6 +2,7 @@
     "name": "there4/slim-unit-testing-example",
     "description": "Unit Testing SlimPHP - Example Project",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Craig Davis",
@@ -16,7 +17,13 @@
         "slim/views": "0.1.*",
         "there4/slim-test-helpers": "v0.9.6",
         "twig/twig": "1.15.0",
-        "phpunit/phpunit": "^5.7"
+        "phpunit/phpunit": "^5.7",
+        "monolog/monolog": "^2.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "psr/log": "^1.1",
+        "symfony/console": "v4.4.9",
+        "ext-dom": "20031129",
+        "friendsofphp/php-cs-fixer": "^2.4"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "1.*",
@@ -24,7 +31,12 @@
         "codeclimate/php-test-reporter": "dev-master"
     },
     "autoload": {
-        "psr-0": {"There4": "lib/"}
+        "psr-0": {
+          "There4": "lib/"
+        },
+        "psr-4": {
+          "FeedIo\\": "lib/FeedIo"
+        }
     },
     "scripts": {
         "test": "vendor/bin/phpunit --verbose --coverage-text",

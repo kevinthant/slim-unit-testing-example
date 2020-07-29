@@ -155,5 +155,20 @@ $app->get('/issue12', function () use ($app) {
     $app->response->write($response);
 });
 
+$feedIo = \FeedIo\Factory::create()->getFeedIo();
+
+$app->get('/reddit-rss', function () use ($app, $feedIo) {
+  $url = 'https://www.reddit.com/r/news/.rss';
+  $result = $feedIo->read($url);
+  $app->response->headers->set('Content-Type', 'application/json');
+  $app->response->write(json_encode($result->getFeed()->toArray()));
+});
+
+$app->get('/php-rss', function () use ($app, $feedIo) {
+  $url = 'http://php.net/feed.atom';
+  $result = $feedIo->read($url);
+  $app->response->headers->set('Content-Type', 'application/json');
+  $app->response->write(json_encode($result->getFeed()->toArray()));
+});
 
 /* End of file app.php */

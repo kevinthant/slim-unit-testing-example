@@ -2,7 +2,7 @@ version: '3'
 services:
   webapp:
     image: webdevops/php-apache:7.3
-    container_name: lvdemo-webapp
+    container_name: slim-demo-webapp
     ports:
       - "8080:80"
     environment:

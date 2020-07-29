@@ -9,8 +9,8 @@ use There4\Slim\Test\WebTestCase;
 
 define('PROJECT_ROOT', realpath(__DIR__ . '/..'));
 
-require_once PROJECT_ROOT . '/vendor/autoload.php';
-
+$loader = require PROJECT_ROOT . '/vendor/autoload.php';
+$loader->addPsr4('FeedIo\\', __DIR__.'/unit/FeedIo');
 // Initialize our own copy of the slim application
 class LocalWebTestCase extends WebTestCase {
     public function getSlimInstance() {
