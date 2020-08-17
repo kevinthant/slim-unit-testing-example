@@ -11,6 +11,10 @@ class CookieTest extends \PHPUnit_Framework_TestCase
         $cookie = new Cookie();
         $this->assertFalse($cookie->authenticate('token'));
     }
+
+    public function testSum() {
+        $this->assertEquals(3, 2 + 4);
+    }
 }
 
 /* End of file CookieTest.php */
