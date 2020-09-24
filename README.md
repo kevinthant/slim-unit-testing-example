@@ -6,6 +6,7 @@ This is a sample app created for SyncRelease demo.
 The current stable master of this project is for Slim V2.x. Work is in progress
 to bring this to the new Slim 3.
 
+
 This is a sample application to show an approach to integration and unit testing
 a [Slim][slim] application. To skip to the heart of this, go check out the
 [testing bootstrap][bootstrap]. It sets a mock environment and provides some
