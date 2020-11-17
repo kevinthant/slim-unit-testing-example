@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Slim PHP Unit testing" tests="275" assertions="567" failures="2" errors="1" time="1.666557">
+    <testsuite name="FileStoreTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/FileStoreTest.php" tests="4" assertions="8" failures="0" errors="0" time="0.167334">
+      <testcase name="testAuthenticationFailureGets401" class="FileStoreTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/FileStoreTest.php" line="17" assertions="1" time="0.098949"/>
+      <testcase name="testCanDownloadFile" class="FileStoreTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/FileStoreTest.php" line="24" assertions="3" time="0.003524"/>
+      <testcase name="testMissingFileGets404" class="FileStoreTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/FileStoreTest.php" line="34" assertions="1" time="0.052920"/>
+      <testcase name="testUnknownFileTypeGetsCorectHeader" class="FileStoreTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/FileStoreTest.php" line="41" assertions="3" time="0.011941"/>
+    </testsuite>
+    <testsuite name="GetMethodTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/GetMethodTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.004415">
+      <testcase name="testSayHello" class="GetMethodTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/GetMethodTest.php" line="5" assertions="2" time="0.004415"/>
+    </testsuite>
+    <testsuite name="PostMethodTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/PostMethodTest.php" tests="2" assertions="4" failures="0" errors="0" time="0.020518">
+      <testcase name="testSayHello" class="PostMethodTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/PostMethodTest.php" line="5" assertions="2" time="0.002029"/>
+      <testcase name="testIssue3" class="PostMethodTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/PostMethodTest.php" line="13" assertions="2" time="0.018489"/>
+    </testsuite>
+    <testsuite name="PutMethodTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/PutMethodTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.006114">
+      <testcase name="testSayHello" class="PutMethodTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/PutMethodTest.php" line="5" assertions="2" time="0.006114"/>
+    </testsuite>
+    <testsuite name="VersionTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/VersionTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.017704">
+      <testcase name="testVersion" class="VersionTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/VersionTest.php" line="5" assertions="2" time="0.017704"/>
+    </testsuite>
+    <testsuite name="ZenTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/ZenTest.php" tests="2" assertions="3" failures="1" errors="0" time="0.169327">
+      <testcase name="testCanFetchZenFromGitHub" class="ZenTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/ZenTest.php" line="6" assertions="2" time="0.005843"/>
+      <testcase name="testZenResponseWhenGitHubFails" class="ZenTest" file="/Users/kevin/qa/slim-app-demo/tests/integration/ZenTest.php" line="25" assertions="1" time="0.163484">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">ZenTest::testZenResponseWhenGitHubFails
+Failed asserting that 500 matches expected 502.
+
+/Users/kevin/qa/slim-app-demo/tests/integration/ZenTest.php:39
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="ReferrerTest" file="/Users/kevin/qa/slim-app-demo/tests/regression/ReferrerTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.013721">
+      <testcase name="testCanSetReferrer" class="ReferrerTest" file="/Users/kevin/qa/slim-app-demo/tests/regression/ReferrerTest.php" line="6" assertions="1" time="0.013721"/>
+    </testsuite>
+    <testsuite name="FeedIo\Adapter\FileSystem\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/FileSystem/ClientTest.php" tests="2" assertions="6" failures="0" errors="0" time="0.031485">
+      <testcase name="testGetResponse" class="FeedIo\Adapter\FileSystem\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/FileSystem/ClientTest.php" line="28" assertions="5" time="0.018816"/>
+      <testcase name="testGetNotFound" class="FeedIo\Adapter\FileSystem\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/FileSystem/ClientTest.php" line="46" assertions="1" time="0.012669"/>
+    </testsuite>
+    <testsuite name="FeedIo\Adapter\Guzzle\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/Guzzle/ClientTest.php" tests="5" assertions="9" failures="0" errors="1" time="0.079501">
+      <testcase name="testGetResponse" class="FeedIo\Adapter\Guzzle\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/Guzzle/ClientTest.php" line="34" assertions="6" time="0.017385"/>
+      <testcase name="testSetUserAgent" class="FeedIo\Adapter\Guzzle\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/Guzzle/ClientTest.php" line="46" assertions="1" time="0.001218"/>
+      <testcase name="testGetNotFound" class="FeedIo\Adapter\Guzzle\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/Guzzle/ClientTest.php" line="56" assertions="1" time="0.049485"/>
+      <testcase name="testGetServerError" class="FeedIo\Adapter\Guzzle\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/Guzzle/ClientTest.php" line="65" assertions="1" time="0.011413"/>
+      <testcase name="testGetPromise" class="FeedIo\Adapter\Guzzle\ClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/Guzzle/ClientTest.php" line="113" assertions="0" time="0.000000">
+        <error type="PHPUnit_Framework_Exception">FeedIo\Adapter\Guzzle\ClientTest::testGetPromise
+PHPUnit_Framework_Exception: Fatal error: Uncaught Error: Call to undefined method stdClass::view() in /Users/kevin/qa/slim-app-demo/app/app.php:37
+Stack trace:
+#0 Standard input code(421): require_once()
+#1 {main}
+  thrown in /Users/kevin/qa/slim-app-demo/app/app.php on line 37
+
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="FeedIo\Adapter\NullClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/NullClientTest.php" tests="1" assertions="5" failures="0" errors="0" time="0.006841">
+      <testcase name="testGetResponse" class="FeedIo\Adapter\NullClientTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Adapter/NullClientTest.php" line="17" assertions="5" time="0.006841"/>
+    </testsuite>
+    <testsuite name="FeedIo\Async\DefautlCallbackTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Async/DefaultCallbackTest.php" tests="2" assertions="3" failures="0" errors="0" time="0.011694">
+      <testcase name="testProcess" class="FeedIo\Async\DefautlCallbackTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Async/DefaultCallbackTest.php" line="10" assertions="2" time="0.007278"/>
+      <testcase name="testHandleError" class="FeedIo\Async\DefautlCallbackTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Async/DefaultCallbackTest.php" line="21" assertions="1" time="0.004416"/>
+    </testsuite>
+    <testsuite name="FeedIo\Async\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Async/ReaderTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.061793">
+      <testcase name="testProcess" class="FeedIo\Async\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Async/ReaderTest.php" line="24" assertions="1" time="0.053301"/>
+      <testcase name="testHandleError" class="FeedIo\Async\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Async/ReaderTest.php" line="47" assertions="1" time="0.001962"/>
+      <testcase name="testFaultyCallback" class="FeedIo\Async\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Async/ReaderTest.php" line="67" assertions="1" time="0.006530"/>
+    </testsuite>
+    <testsuite name="FeedIo\DateRuleAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/DateRuleAbstractTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.041702">
+      <testcase name="testSetDateTimeBuilder" class="FeedIo\DateRuleAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/DateRuleAbstractTest.php" line="27" assertions="1" time="0.016587"/>
+      <testcase name="testGetDateTimeBuilder" class="FeedIo\DateRuleAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/DateRuleAbstractTest.php" line="35" assertions="1" time="0.002078"/>
+      <testcase name="testGetDateTimeBuilderFailure" class="FeedIo\DateRuleAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/DateRuleAbstractTest.php" line="45" assertions="1" time="0.023037"/>
+    </testsuite>
+    <testsuite name="FeedIo\ExplorerTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ExplorerTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.006247">
+      <testcase name="testDiscover" class="FeedIo\ExplorerTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ExplorerTest.php" line="54" assertions="1" time="0.006247"/>
+    </testsuite>
+    <testsuite name="FeedIo\Factory\Builder\GuzzleClientBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/GuzzleClientBuilderTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.002621">
+      <testcase name="testGetMainClassName" class="FeedIo\Factory\Builder\GuzzleClientBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/GuzzleClientBuilderTest.php" line="11" assertions="1" time="0.000899"/>
+      <testcase name="testGetPackageName" class="FeedIo\Factory\Builder\GuzzleClientBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/GuzzleClientBuilderTest.php" line="17" assertions="1" time="0.000912"/>
+      <testcase name="testGetClient" class="FeedIo\Factory\Builder\GuzzleClientBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/GuzzleClientBuilderTest.php" line="23" assertions="1" time="0.000810"/>
+    </testsuite>
+    <testsuite name="FeedIo\Factory\Builder\MonologBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/MonologBuilderTest.php" tests="5" assertions="7" failures="0" errors="0" time="0.032275">
+      <testcase name="testGetMainClassName" class="FeedIo\Factory\Builder\MonologBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/MonologBuilderTest.php" line="11" assertions="1" time="0.005672"/>
+      <testcase name="testGetPackageName" class="FeedIo\Factory\Builder\MonologBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/MonologBuilderTest.php" line="17" assertions="1" time="0.004546"/>
+      <testcase name="testNewHandler" class="FeedIo\Factory\Builder\MonologBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/MonologBuilderTest.php" line="23" assertions="1" time="0.018960"/>
+      <testcase name="testNewInvalidHandler" class="FeedIo\Factory\Builder\MonologBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/MonologBuilderTest.php" line="34" assertions="1" time="0.001308"/>
+      <testcase name="testGetLogger" class="FeedIo\Factory\Builder\MonologBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/MonologBuilderTest.php" line="40" assertions="3" time="0.001789"/>
+    </testsuite>
+    <testsuite name="FeedIo\Factory\Builder\NullLoggerBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/NullLoggerBuilderTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.005559">
+      <testcase name="testGetMainClassName" class="FeedIo\Factory\Builder\NullLoggerBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/NullLoggerBuilderTest.php" line="8" assertions="1" time="0.001370"/>
+      <testcase name="testGetPackageName" class="FeedIo\Factory\Builder\NullLoggerBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/NullLoggerBuilderTest.php" line="14" assertions="1" time="0.001505"/>
+      <testcase name="testGetLogger" class="FeedIo\Factory\Builder\NullLoggerBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Factory/Builder/NullLoggerBuilderTest.php" line="20" assertions="1" time="0.002684"/>
+    </testsuite>
+    <testsuite name="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" tests="13" assertions="16" failures="0" errors="0" time="0.046792">
+      <testcase name="testCheckDependency" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="9" assertions="1" time="0.002494"/>
+      <testcase name="testCheckMissingDependency" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="20" assertions="1" time="0.001728"/>
+      <testcase name="testSetLoggerBuilder" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="28" assertions="1" time="0.008922"/>
+      <testcase name="testSetClientBuilder" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="37" assertions="1" time="0.001269"/>
+      <testcase name="testExtractConfig" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="46" assertions="1" time="0.001789"/>
+      <testcase name="testExtractEmptyConfig" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="54" assertions="1" time="0.001614"/>
+      <testcase name="testCreate" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="60" assertions="1" time="0.000839"/>
+      <testcase name="testGetBuilder" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="66" assertions="2" time="0.000743"/>
+      <testcase name="testGetExternalBuilder" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="73" assertions="1" time="0.010340"/>
+      <testcase name="testCreateWithMonolog" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="79" assertions="1" time="0.002043"/>
+      <testcase name="testGetFeedIoAfterCreate" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="85" assertions="1" time="0.001336"/>
+      <testcase name="testGetFeedIoAfterCreateWithCustomConfig" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="92" assertions="1" time="0.002088"/>
+      <testcase name="testGetFeedIo" class="FeedIo\FactoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FactoryTest.php" line="119" assertions="3" time="0.011587"/>
+    </testsuite>
+    <testsuite name="FeedIo\Feed\ElementsAwareTraitTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ElementsAwareTraitTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.001264">
+      <testcase name="testGetElementsAsGenerator" class="FeedIo\Feed\ElementsAwareTraitTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ElementsAwareTraitTest.php" line="17" assertions="2" time="0.001264"/>
+    </testsuite>
+    <testsuite name="FeedIo\Feed\Item\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Item/AuthorTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.002582">
+      <testcase name="testSetName" class="FeedIo\Feed\Item\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Item/AuthorTest.php" line="27" assertions="1" time="0.000979"/>
+      <testcase name="testSetUri" class="FeedIo\Feed\Item\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Item/AuthorTest.php" line="33" assertions="1" time="0.000849"/>
+      <testcase name="testSetEmail" class="FeedIo\Feed\Item\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Item/AuthorTest.php" line="39" assertions="1" time="0.000754"/>
+    </testsuite>
+    <testsuite name="FeedIo\Feed\Item\MediaTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Item/MediaTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.005523">
+      <testcase name="testSetType" class="FeedIo\Feed\Item\MediaTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Item/MediaTest.php" line="27" assertions="1" time="0.004602"/>
+      <testcase name="testSetLength" class="FeedIo\Feed\Item\MediaTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Item/MediaTest.php" line="33" assertions="1" time="0.000921"/>
+    </testsuite>
+    <testsuite name="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" tests="14" assertions="26" failures="0" errors="0" time="0.045568">
+      <testcase name="testGetElementIterator" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="31" assertions="4" time="0.004778"/>
+      <testcase name="testNewElement" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="56" assertions="1" time="0.002541"/>
+      <testcase name="testSet" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="61" assertions="1" time="0.006897"/>
+      <testcase name="testGetValue" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="67" assertions="2" time="0.002208"/>
+      <testcase name="testHasElement" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="75" assertions="3" time="0.001782"/>
+      <testcase name="testGetAllElements" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="84" assertions="2" time="0.000813"/>
+      <testcase name="testListElements" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="102" assertions="1" time="0.000788"/>
+      <testcase name="testNewMedia" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="121" assertions="1" time="0.001095"/>
+      <testcase name="testAddMedia" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="126" assertions="2" time="0.001595"/>
+      <testcase name="testHasMedia" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="136" assertions="2" time="0.001139"/>
+      <testcase name="testGetMedias" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="145" assertions="3" time="0.013056"/>
+      <testcase name="testSetAuthor" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="160" assertions="1" time="0.000726"/>
+      <testcase name="testNewAuthor" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="169" assertions="1" time="0.000940"/>
+      <testcase name="testToArray" class="FeedIo\Feed\ItemTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/ItemTest.php" line="174" assertions="2" time="0.007210"/>
+    </testsuite>
+    <testsuite name="FeedIo\Feed\Node\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/CategoryTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.035723">
+      <testcase name="testScheme" class="FeedIo\Feed\Node\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/CategoryTest.php" line="27" assertions="1" time="0.006434"/>
+      <testcase name="testLabel" class="FeedIo\Feed\Node\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/CategoryTest.php" line="35" assertions="1" time="0.020248"/>
+      <testcase name="testTerm" class="FeedIo\Feed\Node\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/CategoryTest.php" line="43" assertions="1" time="0.009041"/>
+    </testsuite>
+    <testsuite name="FeedIo\Feed\Node\ElementIteratorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/ElementIteratorTest.php" tests="2" assertions="3" failures="0" errors="0" time="0.001986">
+      <testcase name="testValid" class="FeedIo\Feed\Node\ElementIteratorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/ElementIteratorTest.php" line="38" assertions="1" time="0.001217"/>
+      <testcase name="testCount" class="FeedIo\Feed\Node\ElementIteratorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/ElementIteratorTest.php" line="45" assertions="2" time="0.000769"/>
+    </testsuite>
+    <testsuite name="FeedIo\Feed\Node\ElementTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/ElementTest.php" tests="4" assertions="5" failures="0" errors="0" time="0.022287">
+      <testcase name="testSetName" class="FeedIo\Feed\Node\ElementTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/ElementTest.php" line="22" assertions="1" time="0.003404"/>
+      <testcase name="testSetValue" class="FeedIo\Feed\Node\ElementTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/ElementTest.php" line="30" assertions="1" time="0.002832"/>
+      <testcase name="testAttributes" class="FeedIo\Feed\Node\ElementTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/ElementTest.php" line="39" assertions="2" time="0.004326"/>
+      <testcase name="testGetNullAttribute" class="FeedIo\Feed\Node\ElementTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/Node/ElementTest.php" line="49" assertions="1" time="0.011725"/>
+    </testsuite>
+    <testsuite name="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" tests="9" assertions="20" failures="0" errors="0" time="0.013060">
+      <testcase name="testTitle" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="29" assertions="2" time="0.001247"/>
+      <testcase name="testPublicId" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="37" assertions="2" time="0.001399"/>
+      <testcase name="testDescription" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="44" assertions="2" time="0.005220"/>
+      <testcase name="testLink" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="51" assertions="2" time="0.001591"/>
+      <testcase name="testLastModified" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="58" assertions="2" time="0.000863"/>
+      <testcase name="testNewCategory" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="65" assertions="1" time="0.000682"/>
+      <testcase name="testGetCategoryAsGenerator" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="70" assertions="1" time="0.000715"/>
+      <testcase name="testToArray" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="82" assertions="5" time="0.000713"/>
+      <testcase name="testAddCategory" class="FeedIo\Feed\NodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Feed/NodeTest.php" line="101" assertions="3" time="0.000630"/>
+    </testsuite>
+    <testsuite name="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" tests="22" assertions="31" failures="0" errors="0" time="0.078740">
+      <testcase name="testConstruct" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="48" assertions="1" time="0.007310"/>
+      <testcase name="testDiscovery" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="55" assertions="1" time="0.003288"/>
+      <testcase name="testGetCommonStandards" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="72" assertions="5" time="0.001539"/>
+      <testcase name="testAddDateFormats" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="81" assertions="1" time="0.001133"/>
+      <testcase name="testFixerSet" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="88" assertions="1" time="0.004721"/>
+      <testcase name="testGetBaseFixers" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="93" assertions="4" time="0.001111"/>
+      <testcase name="testAddFilter" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="102" assertions="1" time="0.005805"/>
+      <testcase name="testResetFilters" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="110" assertions="1" time="0.001386"/>
+      <testcase name="testWithModifiedSince" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="116" assertions="1" time="0.013981"/>
+      <testcase name="testAddStandard" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="126" assertions="1" time="0.001200"/>
+      <testcase name="testGetDateTimeBuilder" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="135" assertions="1" time="0.000962"/>
+      <testcase name="testGetReader" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="143" assertions="1" time="0.001895"/>
+      <testcase name="testSetReader" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="151" assertions="1" time="0.000880"/>
+      <testcase name="testRead" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="168" assertions="2" time="0.009812"/>
+      <testcase name="testReadSince" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="178" assertions="2" time="0.001744"/>
+      <testcase name="testFormat" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="189" assertions="1" time="0.002837"/>
+      <testcase name="testToRss" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="201" assertions="1" time="0.001057"/>
+      <testcase name="testToAtom" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="212" assertions="1" time="0.011058"/>
+      <testcase name="testToJson" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="223" assertions="1" time="0.001850"/>
+      <testcase name="testPsrResponse" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="231" assertions="1" time="0.001862"/>
+      <testcase name="testGetStandard" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="253" assertions="1" time="0.001299"/>
+      <testcase name="testWrongStandard" class="FeedIo\FeedIoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedIoTest.php" line="261" assertions="1" time="0.002009"/>
+    </testsuite>
+    <testsuite name="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" tests="10" assertions="18" failures="0" errors="0" time="0.024921">
+      <testcase name="testConstruct" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="31" assertions="1" time="0.002511"/>
+      <testcase name="testNext" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="36" assertions="2" time="0.000984"/>
+      <testcase name="testIsValid" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="49" assertions="2" time="0.000914"/>
+      <testcase name="testRewind" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="60" assertions="2" time="0.000622"/>
+      <testcase name="testKey" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="71" assertions="3" time="0.000583"/>
+      <testcase name="testAdd" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="81" assertions="2" time="0.001090"/>
+      <testcase name="testUrl" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="90" assertions="1" time="0.011993"/>
+      <testcase name="testToArray" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="100" assertions="1" time="0.001860"/>
+      <testcase name="testJsonSerialize" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="111" assertions="2" time="0.001343"/>
+      <testcase name="testCount" class="FeedIo\FeedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FeedTest.php" line="125" assertions="2" time="0.003021"/>
+    </testsuite>
+    <testsuite name="FeedIo\Filter\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Filter/ModifiedSinceTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.004413">
+      <testcase name="testIsValid" class="FeedIo\Filter\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Filter/ModifiedSinceTest.php" line="31" assertions="1" time="0.000909"/>
+      <testcase name="testIsTooOld" class="FeedIo\Filter\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Filter/ModifiedSinceTest.php" line="38" assertions="1" time="0.001430"/>
+      <testcase name="testIsNotValid" class="FeedIo\Filter\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Filter/ModifiedSinceTest.php" line="45" assertions="1" time="0.002074"/>
+    </testsuite>
+    <testsuite name="FeedIo\Formatter\FormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FormatterTest.php" tests="6" assertions="11" failures="0" errors="0" time="0.052068">
+      <testcase name="testGetEmptyDocument" class="FeedIo\Formatter\FormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FormatterTest.php" line="55" assertions="1" time="0.001890"/>
+      <testcase name="testGetDocument" class="FeedIo\Formatter\FormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FormatterTest.php" line="60" assertions="1" time="0.015711"/>
+      <testcase name="testGetAllRules" class="FeedIo\Formatter\FormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FormatterTest.php" line="65" assertions="4" time="0.009927"/>
+      <testcase name="testToString" class="FeedIo\Formatter\FormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FormatterTest.php" line="83" assertions="3" time="0.002304"/>
+      <testcase name="testToDom" class="FeedIo\Formatter\FormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FormatterTest.php" line="95" assertions="1" time="0.003125"/>
+      <testcase name="testSetItems" class="FeedIo\Formatter\FormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/FormatterTest.php" line="102" assertions="1" time="0.019112"/>
+    </testsuite>
+    <testsuite name="FeedIo\Http\ResponseBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Http/ResponseBuilderTest.php" tests="3" assertions="12" failures="0" errors="0" time="0.022836">
+      <testcase name="testCreateJsonResponse" class="FeedIo\Http\ResponseBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Http/ResponseBuilderTest.php" line="15" assertions="3" time="0.006545"/>
+      <testcase name="testCreateAtomResponse" class="FeedIo\Http\ResponseBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Http/ResponseBuilderTest.php" line="31" assertions="4" time="0.003059"/>
+      <testcase name="testResponseOnEmptyFeed" class="FeedIo\Http\ResponseBuilderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Http/ResponseBuilderTest.php" line="53" assertions="5" time="0.013232"/>
+    </testsuite>
+    <testsuite name="FeedIo\JsonFormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/JsonFormatterTest.php" tests="2" assertions="15" failures="0" errors="0" time="0.002604">
+      <testcase name="testToString" class="FeedIo\JsonFormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/JsonFormatterTest.php" line="23" assertions="13" time="0.001269"/>
+      <testcase name="testIsHtml" class="FeedIo\JsonFormatterTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/JsonFormatterTest.php" line="58" assertions="2" time="0.001335"/>
+    </testsuite>
+    <testsuite name="FeedIo\Parser\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/AtomTest.php" tests="6" assertions="30" failures="0" errors="0" time="0.022907">
+      <testcase name="testEnclosure" class="FeedIo\Parser\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/AtomTest.php" line="37" assertions="5" time="0.009590"/>
+      <testcase name="testCanHandle" class="FeedIo\Parser\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/AtomTest.php" line="36" assertions="1" time="0.001748"/>
+      <testcase name="testGetMainElement" class="FeedIo\Parser\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/AtomTest.php" line="42" assertions="1" time="0.001183"/>
+      <testcase name="testBuildFeedRuleSet" class="FeedIo\Parser\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/AtomTest.php" line="49" assertions="1" time="0.000735"/>
+      <testcase name="testBuildItemRuleSet" class="FeedIo\Parser\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/AtomTest.php" line="55" assertions="1" time="0.000743"/>
+      <testcase name="testParseBody" class="FeedIo\Parser\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/AtomTest.php" line="61" assertions="21" time="0.008908"/>
+    </testsuite>
+    <testsuite name="FeedIo\Parser\JsonParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/JsonParserTest.php" tests="1" assertions="13" failures="0" errors="0" time="0.004293">
+      <testcase name="testParseContent" class="FeedIo\Parser\JsonParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/JsonParserTest.php" line="27" assertions="13" time="0.004293"/>
+    </testsuite>
+    <testsuite name="FeedIo\Parser\MediaRssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/MediaRSSTest.php" tests="1" assertions="7" failures="0" errors="0" time="0.011428">
+      <testcase name="testYoutubeFeed" class="FeedIo\Parser\MediaRssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/MediaRSSTest.php" line="53" assertions="7" time="0.011428"/>
+    </testsuite>
+    <testsuite name="FeedIo\Parser\RdfTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RdfTest.php" tests="5" assertions="14" failures="0" errors="0" time="0.029611">
+      <testcase name="testParseBody" class="FeedIo\Parser\RdfTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RdfTest.php" line="31" assertions="10" time="0.002341"/>
+      <testcase name="testCanHandle" class="FeedIo\Parser\RdfTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RdfTest.php" line="36" assertions="1" time="0.001718"/>
+      <testcase name="testGetMainElement" class="FeedIo\Parser\RdfTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RdfTest.php" line="42" assertions="1" time="0.014651"/>
+      <testcase name="testBuildFeedRuleSet" class="FeedIo\Parser\RdfTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RdfTest.php" line="49" assertions="1" time="0.001187"/>
+      <testcase name="testBuildItemRuleSet" class="FeedIo\Parser\RdfTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RdfTest.php" line="55" assertions="1" time="0.009714"/>
+    </testsuite>
+    <testsuite name="FeedIo\Parser\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RssTest.php" tests="7" assertions="33" failures="0" errors="0" time="0.018282">
+      <testcase name="testEnclosure" class="FeedIo\Parser\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RssTest.php" line="35" assertions="5" time="0.001704"/>
+      <testcase name="testDcCreator" class="FeedIo\Parser\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RssTest.php" line="54" assertions="3" time="0.001675"/>
+      <testcase name="testCanHandle" class="FeedIo\Parser\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RssTest.php" line="36" assertions="1" time="0.001221"/>
+      <testcase name="testGetMainElement" class="FeedIo\Parser\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RssTest.php" line="42" assertions="1" time="0.001014"/>
+      <testcase name="testBuildFeedRuleSet" class="FeedIo\Parser\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RssTest.php" line="49" assertions="1" time="0.010131"/>
+      <testcase name="testBuildItemRuleSet" class="FeedIo\Parser\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RssTest.php" line="55" assertions="1" time="0.000733"/>
+      <testcase name="testParseBody" class="FeedIo\Parser\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/RssTest.php" line="61" assertions="21" time="0.001804"/>
+    </testsuite>
+    <testsuite name="FeedIo\Parser\UrlGeneratorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/UrlGeneratorTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.001545">
+      <testcase name="testGetAbsolutePath" class="FeedIo\Parser\UrlGeneratorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/UrlGeneratorTest.php" line="17" assertions="1" time="0.000835"/>
+      <testcase name="testGenerateAbsolutePath" class="FeedIo\Parser\UrlGeneratorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Parser/UrlGeneratorTest.php" line="26" assertions="1" time="0.000710"/>
+    </testsuite>
+    <testsuite name="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" tests="9" assertions="15" failures="0" errors="0" time="0.109173">
+      <testcase name="testParse" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="50" assertions="1" time="0.004861"/>
+      <testcase name="testParseNode" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="58" assertions="4" time="0.001412"/>
+      <testcase name="testParseBadDocument" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="86" assertions="1" time="0.019807"/>
+      <testcase name="testIsValid" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="101" assertions="2" time="0.013111"/>
+      <testcase name="testIsNotValid" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="110" assertions="2" time="0.001381"/>
+      <testcase name="testCheckStructure" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="118" assertions="1" time="0.001353"/>
+      <testcase name="testCheckBadStructure" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="137" assertions="1" time="0.060678"/>
+      <testcase name="testAddResetFilters" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="147" assertions="2" time="0.001010"/>
+      <testcase name="testParseEmptyRssFeed" class="FeedIo\ParserTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ParserTest.php" line="160" assertions="1" time="0.005560"/>
+    </testsuite>
+    <testsuite name="FeedIo\Reader\DocumentTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/DocumentTest.php" tests="5" assertions="5" failures="0" errors="0" time="0.013072">
+      <testcase name="testIsJson" class="FeedIo\Reader\DocumentTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/DocumentTest.php" line="19" assertions="1" time="0.009631"/>
+      <testcase name="testIsXml" class="FeedIo\Reader\DocumentTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/DocumentTest.php" line="26" assertions="1" time="0.000822"/>
+      <testcase name="testGetJsonAsArray" class="FeedIo\Reader\DocumentTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/DocumentTest.php" line="33" assertions="1" time="0.000721"/>
+      <testcase name="testLoadWrongDoucment" class="FeedIo\Reader\DocumentTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/DocumentTest.php" line="42" assertions="1" time="0.000840"/>
+      <testcase name="testLoadWrongJsonDoucment" class="FeedIo\Reader\DocumentTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/DocumentTest.php" line="51" assertions="1" time="0.001058"/>
+    </testsuite>
+    <testsuite name="FeedIo\Reader\Fixer\HttpLastModifiedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/HttpLastModifiedTest.php" tests="2" assertions="4" failures="0" errors="0" time="0.011751">
+      <testcase name="testCorrect" class="FeedIo\Reader\Fixer\HttpLastModifiedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/HttpLastModifiedTest.php" line="38" assertions="2" time="0.001286"/>
+      <testcase name="testSkipCorrectIfLastModifiedNotNull" class="FeedIo\Reader\Fixer\HttpLastModifiedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/HttpLastModifiedTest.php" line="49" assertions="2" time="0.010465"/>
+    </testsuite>
+    <testsuite name="FeedIo\Reader\Fixer\LastModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/LastModifiedSinceTest.php" tests="2" assertions="4" failures="0" errors="0" time="0.002635">
+      <testcase name="testCorrect" class="FeedIo\Reader\Fixer\LastModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/LastModifiedSinceTest.php" line="37" assertions="2" time="0.001600"/>
+      <testcase name="testDontCorrect" class="FeedIo\Reader\Fixer\LastModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/LastModifiedSinceTest.php" line="52" assertions="2" time="0.001035"/>
+    </testsuite>
+    <testsuite name="FeedIo\Reader\Fixer\LastModifiedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/LastModifiedTest.php" tests="2" assertions="3" failures="0" errors="0" time="0.013432">
+      <testcase name="testSearchLastModified" class="FeedIo\Reader\Fixer\LastModifiedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/LastModifiedTest.php" line="46" assertions="1" time="0.000971"/>
+      <testcase name="testCorrect" class="FeedIo\Reader\Fixer\LastModifiedTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/LastModifiedTest.php" line="56" assertions="2" time="0.012461"/>
+    </testsuite>
+    <testsuite name="FeedIo\Reader\Fixer\PublicIdTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/PublicIdTest.php" tests="1" assertions="4" failures="0" errors="0" time="0.001924">
+      <testcase name="testCorrect" class="FeedIo\Reader\Fixer\PublicIdTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Fixer/PublicIdTest.php" line="40" assertions="4" time="0.001924"/>
+    </testsuite>
+    <testsuite name="FeedIo\Reader\FixerSetTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/FixerSetTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.006826">
+      <testcase name="testCorrect" class="FeedIo\Reader\FixerSetTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/FixerSetTest.php" line="27" assertions="1" time="0.006826"/>
+    </testsuite>
+    <testsuite name="FeedIo\Reader\Result\UpdateStatsTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Result/UpdateStatsTest.php" tests="2" assertions="6" failures="0" errors="0" time="0.002228">
+      <testcase name="testIntervals" class="FeedIo\Reader\Result\UpdateStatsTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Result/UpdateStatsTest.php" line="19" assertions="3" time="0.001421"/>
+      <testcase name="testSleepyFeed" class="FeedIo\Reader\Result\UpdateStatsTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/Result/UpdateStatsTest.php" line="40" assertions="3" time="0.000807"/>
+    </testsuite>
+    <testsuite name="FeedIo\Reader\ResultTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/ResultTest.php" tests="1" assertions="6" failures="0" errors="0" time="0.001298">
+      <testcase name="testResult" class="FeedIo\Reader\ResultTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Reader/ResultTest.php" line="44" assertions="6" time="0.001298"/>
+    </testsuite>
+    <testsuite name="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" tests="9" assertions="13" failures="0" errors="0" time="0.025391">
+      <testcase name="testAddParser" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="90" assertions="1" time="0.001571"/>
+      <testcase name="testGetAccurateParser" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="97" assertions="1" time="0.001303"/>
+      <testcase name="testGetAccurateParserFailure" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="108" assertions="1" time="0.008802"/>
+      <testcase name="testParseDocument" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="113" assertions="2" time="0.004553"/>
+      <testcase name="testReadWithModifiedSince" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="125" assertions="3" time="0.001139"/>
+      <testcase name="testReadWithoutModifiedSince" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="141" assertions="1" time="0.001764"/>
+      <testcase name="testReadException" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="153" assertions="1" time="0.003347"/>
+      <testcase name="testHandleResponse" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="159" assertions="2" time="0.001832"/>
+      <testcase name="testHandleEmptyResponse" class="FeedIo\ReaderTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/ReaderTest.php" line="186" assertions="1" time="0.001080"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\Atom\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/AuthorTest.php" tests="5" assertions="11" failures="0" errors="0" time="0.016323">
+      <testcase name="testGetNodeName" class="FeedIo\Rule\Atom\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/AuthorTest.php" line="25" assertions="1" time="0.001077"/>
+      <testcase name="testSet" class="FeedIo\Rule\Atom\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/AuthorTest.php" line="30" assertions="3" time="0.011928"/>
+      <testcase name="testNamespacedSet" class="FeedIo\Rule\Atom\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/AuthorTest.php" line="48" assertions="3" time="0.001175"/>
+      <testcase name="testGetChildValue" class="FeedIo\Rule\Atom\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/AuthorTest.php" line="68" assertions="1" time="0.001135"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\Atom\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/AuthorTest.php" line="78" assertions="3" time="0.001008"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\Atom\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/CategoryTest.php" tests="3" assertions="12" failures="0" errors="0" time="0.028502">
+      <testcase name="testSetProperty" class="FeedIo\Rule\Atom\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/CategoryTest.php" line="29" assertions="4" time="0.000938"/>
+      <testcase name="testCreateCategoryElement" class="FeedIo\Rule\Atom\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/CategoryTest.php" line="51" assertions="3" time="0.007681"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\Atom\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/CategoryTest.php" line="65" assertions="5" time="0.019883"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\Atom\LinkNodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LinkNodeTest.php" tests="3" assertions="8" failures="0" errors="0" time="0.008710">
+      <testcase name="testSet" class="FeedIo\Rule\Atom\LinkNodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LinkNodeTest.php" line="32" assertions="1" time="0.006409"/>
+      <testcase name="testSetMedia" class="FeedIo\Rule\Atom\LinkNodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LinkNodeTest.php" line="43" assertions="3" time="0.001098"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\Atom\LinkNodeTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LinkNodeTest.php" line="63" assertions="4" time="0.001203"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\Atom\LinkTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LinkTest.php" tests="2" assertions="5" failures="0" errors="0" time="0.003948">
+      <testcase name="testSet" class="FeedIo\Rule\Atom\LinkTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LinkTest.php" line="32" assertions="1" time="0.002394"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\Atom\LinkTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LinkTest.php" line="43" assertions="4" time="0.001554"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\Atom\LogoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LogoTest.php" tests="2" assertions="5" failures="0" errors="0" time="0.013972">
+      <testcase name="testSet" class="FeedIo\Rule\Atom\LogoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LogoTest.php" line="32" assertions="1" time="0.012836"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\Atom\LogoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/Atom/LogoTest.php" line="42" assertions="4" time="0.001136"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/AuthorTest.php" tests="3" assertions="5" failures="0" errors="0" time="0.009050">
+      <testcase name="testGetNodeName" class="FeedIo\Rule\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/AuthorTest.php" line="27" assertions="1" time="0.001049"/>
+      <testcase name="testSet" class="FeedIo\Rule\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/AuthorTest.php" line="32" assertions="1" time="0.004245"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\AuthorTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/AuthorTest.php" line="40" assertions="3" time="0.003756"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/CategoryTest.php" tests="4" assertions="11" failures="0" errors="0" time="0.004135">
+      <testcase name="testSetProperty" class="FeedIo\Rule\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/CategoryTest.php" line="29" assertions="3" time="0.001007"/>
+      <testcase name="testCreateCategoryElement" class="FeedIo\Rule\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/CategoryTest.php" line="46" assertions="2" time="0.000865"/>
+      <testcase name="testCreateCategoryElementUsingTerm" class="FeedIo\Rule\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/CategoryTest.php" line="58" assertions="1" time="0.001143"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\CategoryTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/CategoryTest.php" line="68" assertions="5" time="0.001120"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" tests="8" assertions="12" failures="0" errors="0" time="0.026680">
+      <testcase name="testGetTimezone" class="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" line="34" assertions="1" time="0.002363"/>
+      <testcase name="testSetDateFormats" class="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" line="40" assertions="1" time="0.001738"/>
+      <testcase name="testGuessDateFormat" class="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" line="47" assertions="1" time="0.013451"/>
+      <testcase name="testDontGuessDateFormat" class="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" line="56" assertions="1" time="0.001188"/>
+      <testcase name="testConvertDateFormat" class="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" line="62" assertions="4" time="0.000830"/>
+      <testcase name="testDontConvertDateFormat" class="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" line="77" assertions="1" time="0.000738"/>
+      <testcase name="teststringToDateTime" class="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" line="83" assertions="1" time="0.005150"/>
+      <testcase name="testSetTimezone" class="FeedIo\Rule\DateTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DateTest.php" line="88" assertions="2" time="0.001222"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\DescriptionTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DescriptionTest.php" tests="6" assertions="8" failures="0" errors="0" time="0.014962">
+      <testcase name="testGetNodeName" class="FeedIo\Rule\DescriptionTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DescriptionTest.php" line="32" assertions="1" time="0.000944"/>
+      <testcase name="testSet" class="FeedIo\Rule\DescriptionTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DescriptionTest.php" line="37" assertions="1" time="0.001398"/>
+      <testcase name="testSetWithAbsoluteUrlConversion" class="FeedIo\Rule\DescriptionTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DescriptionTest.php" line="48" assertions="1" time="0.000856"/>
+      <testcase name="testSetWithoutConversion" class="FeedIo\Rule\DescriptionTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DescriptionTest.php" line="60" assertions="1" time="0.000681"/>
+      <testcase name="testSetProperty" class="FeedIo\Rule\DescriptionTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DescriptionTest.php" line="73" assertions="1" time="0.000779"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\DescriptionTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/DescriptionTest.php" line="85" assertions="3" time="0.010304"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\LinkTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/LinkTest.php" tests="3" assertions="5" failures="0" errors="0" time="0.002894">
+      <testcase name="testGetNodeName" class="FeedIo\Rule\LinkTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/LinkTest.php" line="29" assertions="1" time="0.000842"/>
+      <testcase name="testSet" class="FeedIo\Rule\LinkTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/LinkTest.php" line="34" assertions="1" time="0.000824"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\LinkTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/LinkTest.php" line="42" assertions="3" time="0.001228"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\LogoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/LogoTest.php" tests="2" assertions="5" failures="0" errors="0" time="0.002189">
+      <testcase name="testSet" class="FeedIo\Rule\LogoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/LogoTest.php" line="39" assertions="1" time="0.001013"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\LogoTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/LogoTest.php" line="53" assertions="4" time="0.001176"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\MediaTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/MediaTest.php" tests="2" assertions="16" failures="0" errors="0" time="0.015601">
+      <testcase name="testSetProperty" class="FeedIo\Rule\MediaTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/MediaTest.php" line="31" assertions="6" time="0.001912"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\MediaTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/MediaTest.php" line="56" assertions="10" time="0.013689"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/ModifiedSinceTest.php" tests="5" assertions="7" failures="0" errors="0" time="0.018105">
+      <testcase name="testSet" class="FeedIo\Rule\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/ModifiedSinceTest.php" line="32" assertions="1" time="0.000999"/>
+      <testcase name="testAddedFormat" class="FeedIo\Rule\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/ModifiedSinceTest.php" line="42" assertions="1" time="0.000964"/>
+      <testcase name="testGetDate" class="FeedIo\Rule\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/ModifiedSinceTest.php" line="58" assertions="1" time="0.000847"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/ModifiedSinceTest.php" line="63" assertions="3" time="0.014093"/>
+      <testcase name="testCreateElementWithoutDateSet" class="FeedIo\Rule\ModifiedSinceTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/ModifiedSinceTest.php" line="85" assertions="1" time="0.001202"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\OptionalFieldTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/OptionalFieldTest.php" tests="7" assertions="24" failures="0" errors="0" time="0.077622">
+      <testcase name="testSetProperty" class="FeedIo\Rule\OptionalFieldTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/OptionalFieldTest.php" line="29" assertions="5" time="0.007138"/>
+      <testcase name="testSetPropertyElementWithSubElements" class="FeedIo\Rule\OptionalFieldTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/OptionalFieldTest.php" line="60" assertions="3" time="0.000929"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\OptionalFieldTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/OptionalFieldTest.php" line="100" assertions="2" time="0.001272"/>
+      <testcase name="testCreateElementWithSubElements" class="FeedIo\Rule\OptionalFieldTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/OptionalFieldTest.php" line="115" assertions="4" time="0.057867"/>
+      <testcase name="testCreateElementWithAttributes" class="FeedIo\Rule\OptionalFieldTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/OptionalFieldTest.php" line="153" assertions="3" time="0.001242"/>
+      <testcase name="testCreateMultipleElements" class="FeedIo\Rule\OptionalFieldTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/OptionalFieldTest.php" line="175" assertions="5" time="0.001398"/>
+      <testcase name="testDontCreateElement" class="FeedIo\Rule\OptionalFieldTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/OptionalFieldTest.php" line="195" assertions="2" time="0.007776"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\PublicIdTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/PublicIdTest.php" tests="3" assertions="6" failures="0" errors="0" time="0.009056">
+      <testcase name="testGetNodeName" class="FeedIo\Rule\PublicIdTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/PublicIdTest.php" line="29" assertions="1" time="0.005965"/>
+      <testcase name="testSet" class="FeedIo\Rule\PublicIdTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/PublicIdTest.php" line="34" assertions="1" time="0.001379"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\PublicIdTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/PublicIdTest.php" line="42" assertions="4" time="0.001712"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\StructureTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/StructureTest.php" tests="4" assertions="7" failures="0" errors="0" time="0.017208">
+      <testcase name="testGetNodeName" class="FeedIo\Rule\StructureTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/StructureTest.php" line="32" assertions="1" time="0.003689"/>
+      <testcase name="testConstruct" class="FeedIo\Rule\StructureTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/StructureTest.php" line="37" assertions="1" time="0.001230"/>
+      <testcase name="testSet" class="FeedIo\Rule\StructureTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/StructureTest.php" line="46" assertions="1" time="0.005342"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\StructureTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/StructureTest.php" line="59" assertions="4" time="0.006947"/>
+    </testsuite>
+    <testsuite name="FeedIo\Rule\TitleTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/TitleTest.php" tests="3" assertions="5" failures="0" errors="0" time="0.004825">
+      <testcase name="testGetNodeName" class="FeedIo\Rule\TitleTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/TitleTest.php" line="31" assertions="1" time="0.000856"/>
+      <testcase name="testSet" class="FeedIo\Rule\TitleTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/TitleTest.php" line="36" assertions="1" time="0.000737"/>
+      <testcase name="testCreateElement" class="FeedIo\Rule\TitleTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Rule/TitleTest.php" line="44" assertions="3" time="0.003232"/>
+    </testsuite>
+    <testsuite name="FeedIo\RuleSetTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/RuleSetTest.php" tests="4" assertions="6" failures="0" errors="0" time="0.005302">
+      <testcase name="testAdd" class="FeedIo\RuleSetTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/RuleSetTest.php" line="29" assertions="1" time="0.001405"/>
+      <testcase name="testAddAliases" class="FeedIo\RuleSetTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/RuleSetTest.php" line="37" assertions="2" time="0.001497"/>
+      <testcase name="testGetByAlias" class="FeedIo\RuleSetTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/RuleSetTest.php" line="48" assertions="1" time="0.001059"/>
+      <testcase name="testGetRules" class="FeedIo\RuleSetTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/RuleSetTest.php" line="56" assertions="2" time="0.001341"/>
+    </testsuite>
+    <testsuite name="FeedIo\Standard\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Standard/AtomTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.025881">
+      <testcase name="testFormat" class="FeedIo\Standard\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Standard/AtomTest.php" line="31" assertions="1" time="0.025881"/>
+    </testsuite>
+    <testsuite name="FeedIo\Standard\RdfTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Standard/RdfTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001696">
+      <testcase name="testFormat" class="FeedIo\Standard\RdfTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Standard/RdfTest.php" line="33" assertions="1" time="0.001696"/>
+    </testsuite>
+    <testsuite name="FeedIo\Standard\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Standard/RssTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000883">
+      <testcase name="testFormat" class="FeedIo\Standard\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/Standard/RssTest.php" line="30" assertions="1" time="0.000883"/>
+    </testsuite>
+    <testsuite name="FeedIo\StandardAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardAbstractTest.php" tests="6" assertions="7" failures="0" errors="0" time="0.039089">
+      <testcase name="testGetItemNodeName" class="FeedIo\StandardAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardAbstractTest.php" line="39" assertions="1" time="0.016188"/>
+      <testcase name="testGetMandatoryFields" class="FeedIo\StandardAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardAbstractTest.php" line="44" assertions="1" time="0.001276"/>
+      <testcase name="testGetFeedRuleSet" class="FeedIo\StandardAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardAbstractTest.php" line="49" assertions="1" time="0.012983"/>
+      <testcase name="testGetItemRuleSet" class="FeedIo\StandardAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardAbstractTest.php" line="54" assertions="1" time="0.001204"/>
+      <testcase name="testGetModifiedSinceRule" class="FeedIo\StandardAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardAbstractTest.php" line="59" assertions="2" time="0.001119"/>
+      <testcase name="testBuildBaseRuleSet" class="FeedIo\StandardAbstractTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardAbstractTest.php" line="66" assertions="1" time="0.006319"/>
+    </testsuite>
+    <testsuite name="FeedIo\StandardFormatter\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardFormatter/AtomTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001881">
+      <testcase name="testFormat" class="FeedIo\StandardFormatter\AtomTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardFormatter/AtomTest.php" line="37" assertions="1" time="0.001881"/>
+    </testsuite>
+    <testsuite name="FeedIo\StandardFormatter\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardFormatter/RssTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001447">
+      <testcase name="testFormat" class="FeedIo\StandardFormatter\RssTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/FeedIo/StandardFormatter/RssTest.php" line="37" assertions="1" time="0.001447"/>
+    </testsuite>
+    <testsuite name="There4\Tests\Authentication\CookieTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/There4/Tests/Authentication/CookieTest.php" tests="2" assertions="2" failures="1" errors="0" time="0.001581">
+      <testcase name="testAuthenticate" class="There4\Tests\Authentication\CookieTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/There4/Tests/Authentication/CookieTest.php" line="9" assertions="1" time="0.000800"/>
+      <testcase name="testSum" class="There4\Tests\Authentication\CookieTest" file="/Users/kevin/qa/slim-app-demo/tests/unit/There4/Tests/Authentication/CookieTest.php" line="15" assertions="1" time="0.000781">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">There4\Tests\Authentication\CookieTest::testSum
+Failed asserting that 6 matches expected 3.
+
+/Users/kevin/qa/slim-app-demo/tests/unit/There4/Tests/Authentication/CookieTest.php:16
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>
